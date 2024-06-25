@@ -13,6 +13,9 @@ Este é um projeto de sistema de carrinho de compras online desenvolvido com Lar
 
     ```bash
     git clone https://github.com/carolinealtoss/shopping-cart.git
+    ```
+
+    ```bash
     cd shopping-cart
     ```
 
