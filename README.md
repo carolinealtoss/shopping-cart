@@ -1,4 +1,4 @@
-# Shopping Cart System
+# Sistema de Carrinho de Compras
 
 Este é um projeto de sistema de carrinho de compras online desenvolvido com Laravel 11. Ele permite que os clientes adicionem itens ao carrinho, escolham a forma de pagamento e visualizem o valor final da compra. A camada de regras de negócio foi implementada para calcular o valor final da compra com base nos itens adicionados ao carrinho e na forma de pagamento escolhida.
 
@@ -44,10 +44,10 @@ O projeto segue a Arquitetura Limpa/Hexagonal, dividindo as responsabilidades em
 
 ## Executando o Projeto
 
-1. **Inicie o servidor local:**
+**Inicie o servidor local:**
 
     ```bash
-    php artisan serve
+        php artisan serve
     ```
 
 ## Testes
@@ -55,11 +55,11 @@ O projeto segue a Arquitetura Limpa/Hexagonal, dividindo as responsabilidades em
 Este projeto utiliza PHPUnit para testes unitários. Para executar os testes, use o seguinte comando:
 
     ```bash
-    vendor/bin/phpunit
+        vendor/bin/phpunit
     ```
 
 Ou utilize o seguinte comando:
 
     ```bash
-    php artisan test
+        php artisan test
     ```
