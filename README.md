@@ -47,7 +47,7 @@ O projeto segue a Arquitetura Limpa/Hexagonal, dividindo as responsabilidades em
 **Inicie o servidor local:**
 
     ```bash
-    php artisan serve
+        php artisan serve
     ```
 
 ## Testes
@@ -55,11 +55,11 @@ O projeto segue a Arquitetura Limpa/Hexagonal, dividindo as responsabilidades em
 Este projeto utiliza PHPUnit para testes unitários. Para executar os testes, use o seguinte comando:
 
     ```bash
-    vendor/bin/phpunit
+        vendor/bin/phpunit
     ```
 
 Ou utilize o seguinte comando:
 
     ```bash
-    php artisan test
+        php artisan test
     ```
