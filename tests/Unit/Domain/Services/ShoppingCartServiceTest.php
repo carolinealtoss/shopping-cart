@@ -28,10 +28,26 @@ class ShoppingCartServiceTest extends TestCase
 
     public function testCalculateTotalWithCreditCardPayment()
     {
-        $total = $this->cart->calculateTotal(new CreditCardPayment(1));
+        $dataSingleInstallment = [
+            'cardHolderName' => 'Anabela Luz',
+            'cardNumber' => '1234567812345678',
+            'expiryDate' => '12/25',
+            'cvv' => '123',
+            'installments' => 1
+        ];
+
+        $dataMultipleInstallments = [
+            'cardHolderName' => 'Gael Solar',
+            'cardNumber' => '1234567812345678',
+            'expiryDate' => '12/25',
+            'cvv' => '123',
+            'installments' => 12
+        ];
+
+        $total = $this->cart->calculateTotal(new CreditCardPayment($dataSingleInstallment));
         $this->assertEquals(200.00, $total);
 
-        $total = $this->cart->calculateTotal(new CreditCardPayment(12));
+        $total = $this->cart->calculateTotal(new CreditCardPayment($dataMultipleInstallments));
         $this->assertEquals(225.37, $total);
     }
 }
